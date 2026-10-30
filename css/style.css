@@ -1,0 +1,169 @@
+/* CSS Separado para o Projeto do FC Barcelona */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f5f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com paleta Azul-Grená */
+header {
+    background-color: #004d98; /* Azul Blaugrana */
+    color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 6px solid #a50044; /* Grená Barça */
+}
+
+header img {
+    max-width: 85px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #a50044; /* Fundo Grená */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 22px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Efeito de Destaque Dourado ao passar o mouse */
+nav ul li a:hover {
+    background-color: #edbb00; /* Amarelo/Dourado do Escudo */
+    color: #004d98;
+}
+
+/* Layout em duas colunas com Flexbox */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+/* Espaço do Bloco Central */
+main {
+    flex: 3;
+    min-width: 300px;
+}
+
+/* Estilo das seções de conteúdo */
+section {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+section h2 {
+    color: #004d98;
+    margin-bottom: 15px;
+    border-left: 6px solid #edbb00;
+    padding-left: 12px;
+}
+
+/* Imagens Estilizadas e Responsivas */
+.img-responsiva {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Artigos Internos */
+article {
+    background: #fbfcfe;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #004d98;
+    border-radius: 4px;
+}
+
+article h3 {
+    color: #a50044;
+    margin-bottom: 10px;
+}
+
+/* Barra Lateral de Troféus */
+aside {
+    flex: 1;
+    min-width: 260px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    height: fit-content;
+}
+
+aside h2 {
+    color: #a50044;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #edbb00;
+    padding-bottom: 6px;
+}
+
+aside ul {
+    list-style-position: inside;
+    margin-top: 12px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #eaeaea;
+    padding-bottom: 6px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #004d98;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 6px solid #edbb00;
+}
+
+footer a {
+    color: #edbb00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
